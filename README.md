@@ -15,7 +15,7 @@ to
 
 **Highlight -> Create file -> Place file -> Rename file** 
 
-So 6 steps to 4, but small changes scale if you do this often, making it a great means of adding a shortcut to your workflow. For me personally, this is especially useful when pasting large bodies of text into an AI. You see, AI likes to truncate large blocks, causing it to miss certain pieces of context and hallucinate. But, when using files, AI is better able to analyze those pieces of text as files, almost always utilizing better context and missing fewer insights. So this extension has actually helped me out, both in terms of the quality of my AI responses as well as in the speed of my workflow.
+So 6 steps to 4, but small changes scale if you do this often, making it a great means of adding a shortcut to your workflow. For me personally, this is especially useful when pasting large bodies of text into an AI. You see, AI likes to truncate large blocks, causing it to miss certain pieces of context and hallucinate. But, when using files, AI is better able to analyze those pieces of text, almost always utilizing better context and missing fewer insights. So this extension has actually helped me out, both in terms of the quality of my AI responses as well as in the speed of my workflow.
 
 Files have a specific ID that is tracked by the extension, meaning that at any point, you can go to the extension window and clear all of the bulk you've built up without needing to meticulously ensure you deleted every text file, as to not clutter up your system, making this a great organizational tool for junk files on top of the slight speed boost.
 
