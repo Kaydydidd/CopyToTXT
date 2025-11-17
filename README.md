@@ -7,45 +7,10 @@ CopyToTXT is a lightweight Chrome extension that lets you **right-click selected
 
 ---
 
-## Features
+Needed to put this up on GitHub! 
 
-### Right-click → Download as file
+This is a small chrome extension (as of now) that is used for quickly highlighting and downloading text into a specific file format. The main focus of this is to speed up workflow, particularly in an environment working with AI, in which dropping in text/data in and out of a model is common. The workflow changes from **Highlight -> Copy -> Create File -> Rename File -> Paste -> Save** to **Highlight -> Create file -> Place file -> Rename file**. So 6 steps to 4, but small changes scale if you do this often, making it a great means of adding a shortcut to your workflow. For me personally, this is especially useful when pasting large bodies of text into an AI. You see, AI likes to truncate large blocks, causing it to miss certain pieces of context and hallucinate. But, when using files, AI is better able to analyze those pieces of text as files, almost always utilizing better context and missing fewer insights. So this extension has actually helped me out, both in terms of the quality of my AI responses as well as in the speed of my workflow.
 
-- Select any text on a web page
-- Right-click and choose **Download as .ext** (e.g. `.txt`, `.csv`, `.xml`)
-- CopyToTXT will:
-  - Build a filename based on the page title (and a unique ID)
-  - Save it into a `CopyToTXT/` subfolder in your default downloads directory
-  - Store a record of the snippet (text, page title, URL, timestamp, format)
+Files have a specific ID that is tracked by the extension, meaning that at any point, you can go to the extension window and clear all of the bulk you've built up without needing to meticulously ensure you deleted every text file, as to not clutter up your system, making this a great organizational tool for junk files on top of the slight speed boost.
 
-### Snippet history (popup)
-
-Click the extension icon to open the popup:
-
-- See a list of **saved snippets**
-  - Shows origin domain, timestamp, page title, and format (`.txt`, `.csv`, etc.)
-  - Preview the first portion of the text
-- Per snippet you can:
-  - **Copy** text back to your clipboard
-  - **Show File** to open the downloaded file in your system’s file manager
-  - **Delete** the snippet entry (and attempt to remove its downloaded file)
-- There’s also a **“Clear Files”** button to wipe all snippets and associated files.
-
-### Custom file formats
-
-As of v2.0, you can configure which extensions appear in the right-click menu.
-
-In the popup under **Download Formats**:
-
-- See the current list of formats (e.g. `.csv`, `.txt`, `.xml`)
-- **Add** a new format (e.g. `md`, `log`, `json`)
-- **Remove** formats you don’t want
-
-The extension will:
-
-- Store your chosen formats in `chrome.storage.local`
-- Rebuild the context menu so each format appears as its own item:
-  - `Download as .csv`
-  - `Download as .xml`
-  - `Download as .md`
-  - etc.
+v1.0 originally only allowed the user to copy text to TXT, but now the user can add more file extensions to their bar, letting them download whatever they want seamlessly. This is especially helpful for AI use in which, say, a model were to give you a drop in piece of testing data. Simply copy the file to a .json format, it downloads from Chrome, and you can drag at drop it seamlessly from there. It doesn't fix any sort of major issue; it just speeds up your workflow a little bit.
