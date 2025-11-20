@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CopyToTXT</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>CopyToTXT</h1>
+
+    <div id="controls">
+      <button id="refresh-btn">Refresh</button>
+      <button id="nuke-btn">Clear Files</button>
+    </div>
+
+    <div id="status"></div>
+
+    <h2>Saved Files</h2>
+    <ul id="prompt-list"></ul>
+
+    <div id="format-settings">
+      <h2>Download Formats</h2>
+      <p class="hint">These appear as options in your right-click menu.</p>
+      <div id="format-list"></div>
+      <div id="format-add">
+        <input id="new-format-input" type="text" placeholder="e.g. txt, csv, md, xml">
+        <button id="add-format-btn">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
